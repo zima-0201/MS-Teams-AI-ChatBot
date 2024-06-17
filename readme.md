@@ -4,8 +4,7 @@ This repository contains a Microsoft Teams personal app which contains a bot tha
 
 The app has been built using Teams Toolkit for Visual Studio Code and uses the Open AI DALL-E 2 Image Generation API to generate images.
 
-<video src="https://autobuffy-ebay.s3.eu-north-1.amazonaws.com/Detroit+Axle/Teams-ChatBot.mp4" controls="controls" style="max-width: 730px;">
-</video>
+<video src="https://autobuffy-ebay.s3.eu-north-1.amazonaws.com/Detroit+Axle/Teams-ChatBot.mp4" controls="controls" style="max-width: 730px;">Video</video>
 
 ## Commands
 
