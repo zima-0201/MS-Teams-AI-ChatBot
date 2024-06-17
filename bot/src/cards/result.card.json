@@ -1,0 +1,28 @@
+{
+  "type": "AdaptiveCard",
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.4",
+  "body": [
+    {
+      "type": "Image",
+      "$data": "${data}",
+      "id": "thumb-${$index}",
+      "url": "${url}",
+      "size": "large",
+      "altText": "${$root.prompt}",
+      "selectAction": {
+        "type": "Action.Submit",
+        "title": "Open",
+        "data": {
+          "msteams": {
+            "type": "task/fetch"
+          },
+          "data": {
+            "url": "${url}",
+            "prompt": "${$root.prompt}"
+          }
+        }
+      }
+    }
+  ]
+}

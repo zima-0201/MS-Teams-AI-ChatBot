@@ -1,0 +1,72 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.12/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.12",
+    "version": "1.0.0",
+    "id": "{{state.fx-resource-appstudio.teamsAppId}}",
+    "packageName": "generator.image.dalle.two",
+    "developer": {
+        "name": "Garry Trinder",
+        "websiteUrl": "https://garrytrinder.github.io",
+        "privacyUrl": "https://garrytrinder.github.io",
+        "termsOfUseUrl": "https://garrytrinder.github.io"
+    },
+    "icons": {
+        "color": "{{config.manifest.icons.color}}",
+        "outline": "{{config.manifest.icons.outline}}"
+    },
+    "name": {
+        "short": "{{config.manifest.appName.short}}",
+        "full": "{{config.manifest.appName.full}}"
+    },
+    "description": {
+        "short": "{{config.manifest.description.short}}",
+        "full": "{{config.manifest.description.full}}"
+    },
+    "accentColor": "#0078d4",
+    "bots": [
+        {
+            "botId": "{{state.fx-resource-bot.botId}}",
+            "scopes": [
+                "personal"
+            ],
+            "supportsFiles": false,
+            "isNotificationOnly": false,
+            "commandLists": [
+                {
+                    "scopes": [
+                        "personal"
+                    ],
+                    "commands": [
+                        {
+                            "title": "generate",
+                            "description": "Usage: generate <text>"
+                        },
+                        {
+                            "title": "history",
+                            "description": "Usage: history"
+                        },
+                        {
+                            "title": "settings",
+                            "description": "Usage: settings"
+                        },
+                        {
+                            "title": "surprise",
+                            "description": "Usage: surprise"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "composeExtensions": [],
+    "configurableTabs": [],
+    "staticTabs": [],
+    "permissions": [
+        "identity",
+        "messageTeamMembers"
+    ],
+    "validDomains": [
+        "{{state.fx-resource-bot.domain}}",
+        "oaidalleapiprodscus.blob.core.windows.net"
+    ]
+}
